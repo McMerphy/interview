@@ -1,5 +1,4 @@
 ﻿(function () {
-    'use strict';
     var londonApp = angular.module('londonApp', ['TransportService', 'ngMap', 'MassAutoComplete','ngSanitize']);
 
 

@@ -2,3 +2,6 @@ body {
   margin-left: 5px;
   background-color: #f3f3f3;
 }
+body h2 {
+  color: #000000;
+}

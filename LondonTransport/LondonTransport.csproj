@@ -134,6 +134,7 @@
     <Content Include="Scripts\app-bundle.js" />
     <Content Include="Scripts\lib\angular-bundle.min.js" />
     <Content Include="Scripts\lib\bootstrap.min.js" />
+    <Content Include="Scripts\lib\jquery.min.js" />
     <Content Include="Scripts\src\transport-app.js" />
     <Content Include="Scripts\src\transport-service.js" />
     <Content Include="wwwroot\lib\angular-mass-autocomplete\gulpfile.js" />

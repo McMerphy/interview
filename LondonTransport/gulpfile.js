@@ -9,6 +9,12 @@ gulp.task('less', function () {
         .pipe(gulp.dest('Content/css'));
 });
 
+gulp.task('bootstrap-styles', function () {
+    return gulp.src('wwwroot/lib/bootstrap/dist/css/bootstrap.min.css')
+        .pipe(gulp.dest('Content/css'))
+});
+
+
 gulp.task('angular-scripts', function () {
     return gulp.src([
             'wwwroot/lib/angular/angular.min.js',
@@ -29,15 +35,20 @@ gulp.task('app-scripts', function () {
         .pipe(gulp.dest('scripts'))
 });
 
-gulp.task('bootstrap-styles', function () {
-    return gulp.src('wwwroot/lib/bootstrap/dist/css/bootstrap.min.css')
-        .pipe(gulp.dest('Content/css'))
-});
-
 gulp.task('bootstrap-scripts', function () {
     return gulp.src('wwwroot/lib/bootstrap/dist/js/bootstrap.min.js')
         .pipe(gulp.dest('Scripts/lib'))
+});
+
+gulp.task('jquery-scripts', function () {
+    return gulp.src('wwwroot/lib/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest('Scripts/lib'))
+});
+
+gulp.task('watch', function () {
+    return gulp.watch(['Scripts/src/*', 'Content/less/*'], ['app-scripts', 'less']);
 })
 
-gulp.task('default', ['bootstrap-scripts', 'bootstrap-styles', 'app-scripts', 'angular-scripts', 'less']);
+gulp.task('default', ['bootstrap-scripts', 'bootstrap-styles', 'app-scripts', 'angular-scripts', 'jquery-scripts', 'less']);
+
 

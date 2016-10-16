@@ -3,10 +3,11 @@
 	"name": "LondonTransport",
 	"private": true,
 	"devDependencies": {
+    "bower": "~1.7.9",
     "gulp": "~3.9.1",
-    "gulp-less": "~3.1.0",
     "gulp-concat": "~2.6.0",
+    "gulp-less": "~3.1.0",
     "gulp-uglify": "~2.0.0",
-    "bower": "~1.7.9"
+    "gulp-watch" : "~4.3.10"
 	}
 }
