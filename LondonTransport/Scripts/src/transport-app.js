@@ -7,7 +7,6 @@
     $scope.toSearchResults = [];
     $scope.journeys = {};
     $scope.currentJourney = {};
-    var bounds = new google.maps.LatLngBounds();
 
     $scope.init = function () {
     }
@@ -18,6 +17,22 @@
 
     function placeMarker(lat, lon, markerType) {
         markerType == 'departure' ? $scope.fromMarker = [lat, lon] : $scope.toMarker = [lat, lon];
+    }
+
+    function fitArrivalAndDestinationMarkers() {
+        var bounds = new google.maps.LatLngBounds();
+        if ($scope.from.lat != undefined) {
+            var latlng = new google.maps.LatLng($scope.from.lat, $scope.from.lon);
+            bounds.extend(latlng);
+        }
+        if ($scope.to.lat != undefined) {
+            var latlng = new google.maps.LatLng($scope.to.lat, $scope.to.lon);
+            bounds.extend(latlng);
+        }
+        NgMap.getMap().then(function (map) {
+            map.setCenter(bounds.getCenter());
+            map.fitBounds(bounds);
+        });
     }
 
 
@@ -87,14 +102,14 @@
         $scope.from = selected;
         if (selected.lat != undefined) {
             placeMarker(selected.lat, selected.lon, 'departure');
-            zoomToLocation(selected.lat, selected.lon);
+            fitArrivalAndDestinationMarkers();
         }
     }
     function selectToItem(selected) {
         $scope.to = selected;
         if (selected.lat != undefined) {
             placeMarker(selected.lat, selected.lon, 'arrival');
-            zoomToLocation(selected.lat, selected.lon); 
+            fitArrivalAndDestinationMarkers();
         }
     }
 

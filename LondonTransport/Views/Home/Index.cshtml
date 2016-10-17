@@ -47,6 +47,7 @@
         <div class="col-xs-12">
             <ng-map  center="51.50,-0.12" zoom="10" on-click="placeMarker()">
                 <marker position="{{fromMarker}}"></marker>
+                <marker position="{{toMarker}}"></marker>
                 <shape ng-repeat="leg in currentJourney.legs" name="polyline" id="foo"
                        path="{{leg.path.lineString}}"
                        stroke-color="{{leg.color}}"
