@@ -90,11 +90,101 @@ body {
             }
         }
         .custom-marker-icon {
+            left:10px;        
         }
     }
 }
 
+/* 
+    Journeys 
+*/
+.journeys {
+    padding: 5px 25px;
+    font-size: 1.4em;
+}
 
+.possible-journeys .list-group {
+    font-weight: bold;
+    max-height:300px;
+    overflow-y: auto;
+}
+
+.journeys a.list-group-item {
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.bound-time {
+    font-weight:bold;
+    margin-top: 14px;
+}
+
+.bound-time span {
+    color: #2239c2
+}
+
+.show-more {
+    color: #2239c2;
+    margin-top: 14px;
+    text-align:right;
+}
+
+.show-more span:hover{
+    cursor:pointer;
+}
+
+.journey-time {
+    vertical-align:central;
+    margin-top: 14px;
+
+}
+
+ul.journey-steps {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    height: 100%;
+    display: inline-block;
+    width: 65%;
+    padding: 0 5px;
+}
+ul.journey-steps li {
+    float: left;
+    margin: 5px 3px;
+    position: relative;
+    list-style-type: none;
+}
+
+.hide-text {
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+/* Journey steps in journey description */
+.journey-description li {
+    line-height:30px;
+    padding: 5px 10px;
+}
+
+.journey-step {
+    display:inline-block;
+    margin-left:5px;
+    margin-right: 5px;
+    float:left;
+    width: 30px!important;
+}
+
+.journey-step-descrip {
+    float:left;
+    display:inline-block;
+}
+.journey-step-time {
+    float:left;
+    display:inline-block;
+    font-weight:bold;
+    width: 60px;
+}
 
 
 

@@ -2319,10 +2319,10 @@
 }
 
 .info-message span{
-    display:block;
+    display:inline-block;
     padding-left:50px;
     height: 40px;
-    line-height: 40px;
+    line-height: 25px;
     font-size: 1.3em;
 }
 
