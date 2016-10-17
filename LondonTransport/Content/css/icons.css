@@ -204,7 +204,6 @@
 
 .bus-icon,.replacement-bus-icon {
     background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
-    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
     background-size: 96px 3424px;
     height: 32px;
     width: 32px;
@@ -2325,6 +2324,15 @@
     height: 40px;
     line-height: 40px;
     font-size: 1.3em;
+}
+
+.departure-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 32px -1956px;
+
 }
 
 

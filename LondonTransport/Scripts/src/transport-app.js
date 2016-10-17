@@ -7,6 +7,21 @@
     $scope.toSearchResults = [];
     $scope.journeys = {};
     $scope.currentJourney = {};
+    $scope.fromMarkerIcon =
+    {
+        url: 'Content/images/icons.png',
+        size: [32, 32],
+        origin: [32, 1956],
+        anchor: [1, 32]
+    }
+    $scope.toMarkerIcon =
+    {
+        url: 'Content/images/icons.png',
+        size: [32, 32],
+        origin: [0, 1956],
+        anchor: [1, 32]
+    }
+        
 
     $scope.init = function () {
     }

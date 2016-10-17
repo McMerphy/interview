@@ -23,10 +23,10 @@
             </div>
         </div>
         <div class="col-xs-2">
-            <button>REVERSE</button>
+            <button ng-click="reverseLocations()">REVERSE</button>
         </div>
         <div class="col-xs-2">
-            <button>PLAN JOURNEY</button>
+            <button ng-click="getJourneys(from,to)">PLAN JOURNEY</button>
         </div>
         <div class="col-xs-4">
             <div mass-autocomplete class="autocomplete">
@@ -46,8 +46,8 @@
     <div class="row map">
         <div class="col-xs-12">
             <ng-map  center="51.50,-0.12" zoom="10" on-click="placeMarker()">
-                <marker position="{{fromMarker}}"></marker>
-                <marker position="{{toMarker}}"></marker>
+                <marker position="{{toMarker}}" icon="{{toMarkerIcon}}"></marker>
+                <marker position="{{fromMarker}}" icon="{{fromMarkerIcon}}"></marker>
                 <shape ng-repeat="leg in currentJourney.legs" name="polyline" id="foo"
                        path="{{leg.path.lineString}}"
                        stroke-color="{{leg.color}}"

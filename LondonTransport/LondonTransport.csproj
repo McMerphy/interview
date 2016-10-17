@@ -133,6 +133,7 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\icons.css" />
     <Content Include="Content\css\massautocomplete.theme.css" />
+    <Content Include="Content\images\icons.png" />
     <Content Include="Scripts\app-bundle.js" />
     <Content Include="Scripts\lib\angular-bundle.min.js" />
     <Content Include="Scripts\lib\bootstrap.min.js" />
