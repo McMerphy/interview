@@ -29,9 +29,8 @@ gulp.task('angular-scripts', function () {
 gulp.task('app-scripts', function () {
     return gulp.src([
             'Scripts/src/transport-app.js',
-            'Scripts/src/trasnport-service.js'
+            'Scripts/src/transport-service.js'
     ])
-        .pipe(concat('app-bundle.js'))
         .pipe(gulp.dest('scripts'))
 });
 

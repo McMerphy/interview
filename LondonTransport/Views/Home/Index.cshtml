@@ -3,9 +3,63 @@
 }
 
 @section scripts{ 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV7A_cvEIGd-iQ9KSvtd4TnV5dooBN07Y">
+    </script>
+
     <script src="~/Scripts/lib/jquery.min.js"></script>
     <script src="~/Scripts/lib/bootstrap.min.js"></script>
     <script src="~/Scripts/lib/angular-bundle.min.js"></script>
     
-    <script src="~/Scripts/app-bundle.js"></script>
+    <script src="~/Scripts/transport-app.js"></script>
+    <script src="~/Scripts/transport-service.js"></script>
 }
+<div ng-app="londonApp" ng-controller="JourneyController">
+    <div class="row journey-planner">
+
+        <div class="col-xs-4">
+            <div mass-autocomplete class="autocomplete">
+                <input type="text" ng-model="from.name" placeholder="From"
+                       mass-autocomplete-item="autocomplete_from_options">
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <button>REVERSE</button>
+        </div>
+        <div class="col-xs-2">
+            <button>PLAN JOURNEY</button>
+        </div>
+        <div class="col-xs-4">
+            <div mass-autocomplete class="autocomplete">
+                <input type="text" ng-model="to.name"  placeholder="To"
+                       mass-autocomplete-item="autocomplete_to_options">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            Or you can specify arrival and destination points just clicking of the map
+        </div>
+    </div>
+
+    <div class="row map">
+        <div class="col-xs-12">
+            <ng-map  center="51.50,-0.12" zoom="10" on-click="placeMarker()">
+                <marker position="{{fromMarker}}"></marker>
+                <shape ng-repeat="leg in currentJourney.legs" name="polyline" id="foo"
+                       path="{{leg.path.lineString}}"
+                       stroke-color="{{leg.color}}"
+                       stroke-opacity="1.0"
+                       stroke-weight="3">
+                </shape>
+
+                <div ng-repeat="leg in currentJourney.legs">
+                    <custom-marker ng-repeat="stop in leg.path.stopPoints" position="{{[stop.lat, stop.lon]}}">
+                        <div ng-class="leg.mode.name + '-icon custom-marker-icon'"></div>
+                    </custom-marker>
+                </div>
+            </ng-map>
+        </div>
+    </div>
+</div>

@@ -131,12 +131,16 @@
     <Content Include="bower.json" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\icons.css" />
+    <Content Include="Content\css\massautocomplete.theme.css" />
     <Content Include="Scripts\app-bundle.js" />
     <Content Include="Scripts\lib\angular-bundle.min.js" />
     <Content Include="Scripts\lib\bootstrap.min.js" />
     <Content Include="Scripts\lib\jquery.min.js" />
     <Content Include="Scripts\src\transport-app.js" />
     <Content Include="Scripts\src\transport-service.js" />
+    <Content Include="Scripts\transport-app.js" />
+    <Content Include="Scripts\transport-service.js" />
     <Content Include="wwwroot\lib\angular-mass-autocomplete\gulpfile.js" />
     <Content Include="wwwroot\lib\angular-mass-autocomplete\massautocomplete.js" />
     <Content Include="wwwroot\lib\angular-mass-autocomplete\massautocomplete.min.js" />

@@ -7,13 +7,19 @@
     $scope.toSearchResults = [];
     $scope.journeys = {};
     $scope.currentJourney = {};
+    var bounds = new google.maps.LatLngBounds();
 
     $scope.init = function () {
     }
 
-    $scope.placeMarker = function (e) {
-        $scope.fromMarker =  [ e.latLng.lat(), e.latLng.lng() ] ;
+    $scope.onClickOnMap = function (e) {
+        placeMarker(e.latLng.lat(), e.latLng.lng());
     }
+
+    function placeMarker(lat, lon, markerType) {
+        markerType == 'departure' ? $scope.fromMarker = [lat, lon] : $scope.toMarker = [lat, lon];
+    }
+
 
     $scope.reverseLocations = function () {
         var temp = $scope.from;
@@ -50,23 +56,25 @@
                 for (var j = 0; j < response[i].matches.length; j++) {
                     if (response[i].matches[j].modes != undefined) {
                         for (var k = 0; k < response[i].matches[j].modes.length; k++) {
+                            var match = response[i].matches[j];
                             results.push({
-                                value: response[i].matches[j].name, name: response[i].matches[j].name,
+                                value: match.name, name: match.name, lat: match.lat, lon: match.lon,
                                 label: $sce.trustAsHtml(
-                                   ' <div class="icon ' + response[i].matches[j].modes[k] + '-icon"></div>' +
-                                   '  <strong>' + response[i].matches[j].name + '</strong>'
+                                   ' <div class="icon ' + match.modes[k] + '-icon"></div>' +
+                                   '  <strong>' + match.name + '</strong>'
                                  )
                             });
                         }
                     }
                     else {
-                            results.push({
-                                value: response[i].matches[j].name, name: response[i].matches[j].name,
-                                label: $sce.trustAsHtml(
-                                   '  <div class="icon ' + response[i].matches[j].icon + '-icon"></div>' +
-                                   '  <strong>' + response[i].matches[j].name + '</strong>'
-                                 )
-                            });
+                        var match = response[i].matches[j];
+                        results.push({
+                            value: match.name, name: match.name, lat: match.lat, lon: match.lon,
+                            label: $sce.trustAsHtml(
+                               '  <div><div class="icon ' + match.icon + '-icon"></div>' +
+                               '  <strong>' + match.name + '</strong></div>'
+                             )
+                        });
                     }
                 }
             }
@@ -77,9 +85,22 @@
 
     function selectFromItem(selected) {
         $scope.from = selected;
+        if (selected.lat != undefined) {
+            placeMarker(selected.lat, selected.lon, 'departure');
+            zoomToLocation(selected.lat, selected.lon);
+        }
     }
     function selectToItem(selected) {
         $scope.to = selected;
+        if (selected.lat != undefined) {
+            placeMarker(selected.lat, selected.lon, 'arrival');
+            zoomToLocation(selected.lat, selected.lon); 
+        }
+    }
+
+    function zoomToLocation(lat, lon) {
+        $scope.map.setCenter({ lat: lat, lng: lon });
+        $scope.map.setZoom(15);
     }
 
     $scope.autocomplete_from_options = {

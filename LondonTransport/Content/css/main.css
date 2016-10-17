@@ -1,7 +1,80 @@
+.shadowed {
+  -webkit-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  -moz-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+}
 body {
   margin-left: 5px;
-  background-color: #f3f3f3;
+  background-color: #fefefe;
 }
-body h2 {
-  color: #000000;
+body .container {
+  width: 80%;
+}
+body .app-name {
+  text-align: center;
+}
+body .app-name h1 {
+  -webkit-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  -moz-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  border: 3px solid #3e3e3e;
+  color: #3E3E3E;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding: 3px 55px;
+}
+body input[type='text'] {
+  -webkit-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  -moz-box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  box-shadow: inset 0px 0px 1px 1px #CBCBCB;
+  border-color: #3E3E3E;
+  background-color: transparent;
+  color: #3E3E3E;
+  font-family: Arial, 'Times New Roman', sans-serif;
+  font-size: 1.2em;
+  height: 35px;
+  padding-left: 8px;
+}
+body input[type='text']:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #8ec85a;
+}
+body button {
+  border: none;
+  background-color: #8ec85a;
+  color: #FEF7F1;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 35px;
+}
+body .journey-planner {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body .journey-planner input {
+  width: 100%;
+}
+body .journey-planner .autocomplete {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+body .journey-planner button {
+  width: 80%;
+}
+body .journey-planner button:hover {
+  background-color: #7ab149;
+}
+body .journey-planner div:nth-of-type(2) {
+  text-align: right;
+}
+body .map {
+  margin-top: 40px;
+  height: 480px;
+}
+body .map .col-xs-12 {
+  height: 100%;
+}
+body .map .col-xs-12 ng-map {
+  height: 100%;
 }

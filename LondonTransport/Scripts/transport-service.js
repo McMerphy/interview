@@ -1,4 +1,4 @@
-﻿var transportServices = angular.module('TransportService', []);
+var transportServices = angular.module('TransportService', []);
 
 transportServices.service('transportService', ['$http', '$q', function ($http, $q) {
 

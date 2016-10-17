@@ -1,0 +1,2333 @@
+﻿.icon {
+    display: inline-block;
+}
+
+.icon-left {
+    position: relative;
+    padding-left: 35px !important
+}
+
+.icon-left span {
+    padding-left: 8px
+}
+
+.icon-left:before {
+    content: '';
+    left: 8px;
+    top: 0;
+    position: absolute !important
+}
+
+.icon-left.cycle:before {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -32px -284px;
+    height: 32px;
+    width: 32px;
+    display: block
+}
+
+.body-cms-preview .icon-left.cycle:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .icon-left.cycle:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon-left.walking:before {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -32px -253px;
+    height: 32px;
+    width: 32px;
+    display: block
+}
+
+.body-cms-preview .icon-left.walking:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .icon-left.walking:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon.bicycle-icon,.icon.bicycle-easy-icon .icon.cycle-icon,.icon.cycle-easy-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -288px
+}
+
+.body-cms-preview .icon.bicycle-icon,.body-cms-preview .icon.bicycle-easy-icon .icon.cycle-icon,.body-cms-preview .icon.cycle-easy-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon.walking-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -36px -256px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .icon.walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .icon.walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.footpaths-icon,.footpath-icon,.walking-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: 0px -256px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .footpaths-icon,.body-cms-preview .footpath-icon,.body-cms-preview .walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .footpaths-icon,.body-cms-preview .footpath-icon,.body-cms-preview .walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.search-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -32px
+}
+
+.body-cms-preview .search-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.search-icon-black {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -32px
+}
+
+.body-cms-preview .search-icon-black {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.switch-directions-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -64px
+}
+
+.body-cms-preview .switch-directions-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.expand-map-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -64px
+}
+
+.body-cms-preview .expand-map-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.facebook-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -224px
+}
+
+.body-cms-preview .facebook-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.twitter-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -224px
+}
+
+.body-cms-preview .twitter-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bicycle-icon,.cycle-icon,.bicycle-easy-icon,.cycle-easy-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -288px
+}
+
+.body-cms-preview .bicycle-icon,.body-cms-preview .cycle-icon,.body-cms-preview .bicycle-easy-icon,.body-cms-preview .cycle-easy-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bus-icon,.replacement-bus-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -320px
+}
+
+.body-cms-preview .bus-icon,.body-cms-preview .replacement-bus-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bus-icon.small-icon,.replacement-bus-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -200px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.train-icon,.national-rail-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -352px
+}
+
+.body-cms-preview .train-icon,.body-cms-preview .national-rail-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.train-icon.small-icon,.national-rail-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -220px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.international-rail-icon {
+    display: none !important
+}
+
+.ferry-icon,.river-bus-icon,.river-icon,.river-bus-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -384px
+}
+
+.body-cms-preview .ferry-icon,.body-cms-preview .river-bus-icon,.body-cms-preview .river-icon,.body-cms-preview .river-bus-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.ferry-icon.small-icon,.river-bus-icon.small-icon,.river-icon.small-icon,.river-bus-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -240px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.fewest-changes-icon {
+    background-position: 0px -3008px
+}
+
+.fastest-by-public-transport-icon {
+    background-position: 0px -3040px
+}
+
+.cycle-hire-icon {
+    background-position: -64px -3008px
+}
+
+.cycle-hire-icon-easy {
+    background-position: -64px -3008px
+}
+
+.cycle-hire-icon-moderate {
+    background-position: -32px -3040px
+}
+
+.cycle-hire-icon-fast {
+    background-position: -64px -3040px
+}
+
+.river-tour-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2208px
+}
+
+.body-cms-preview .river-tour-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.river-tour-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: -40px -1380px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.contactless-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -384px
+}
+
+.body-cms-preview .contactless-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.oyster-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -448px
+}
+
+.body-cms-preview .oyster-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.oyster-validation-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -448px
+}
+
+.body-cms-preview .oyster-validation-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.oyster-ticket-stop-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2272px
+}
+
+.body-cms-preview .oyster-ticket-stop-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.car-club-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2592px
+}
+
+.body-cms-preview .car-club-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.mobile-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2656px
+}
+
+.body-cms-preview .mobile-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.dlr-icon,.docklands-icon,.docklands-light-railway-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1088px
+}
+
+.body-cms-preview .dlr-icon,.body-cms-preview .docklands-icon,.body-cms-preview .docklands-light-railway-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.dlr-icon.small-icon,.docklands-icon.small-icon,.docklands-light-railway-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -680px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.tram-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1120px
+}
+
+.body-cms-preview .tram-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tram-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -700px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.cablecar-icon,.cable-car-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -480px
+}
+
+.body-cms-preview .cablecar-icon,.body-cms-preview .cable-car-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.cablecar-icon.small-icon,.cable-car-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -300px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.left-arrow {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -576px
+}
+
+.body-cms-preview .left-arrow {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.white-up-arrow {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -608px
+}
+
+.body-cms-preview .white-up-arrow {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.right-arrow,.rainbow-list .rainbow-list-item.link-only .controls,.widget-wrapper .night-wrapper .controls,.rainbow-list-wrapper .good-service-link:after {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -640px
+}
+
+.body-cms-preview .right-arrow,.body-cms-preview .rainbow-list .rainbow-list-item.link-only .controls,.rainbow-list .rainbow-list-item.link-only .body-cms-preview .controls,.body-cms-preview .widget-wrapper .night-wrapper .controls,.widget-wrapper .night-wrapper .body-cms-preview .controls,.body-cms-preview .rainbow-list-wrapper .good-service-link:after,.rainbow-list-wrapper .body-cms-preview .good-service-link:after {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.white-right-arrow,.rainbow-list-wrapper .good-service-link.night:after {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -640px
+}
+
+.body-cms-preview .white-right-arrow,.body-cms-preview .rainbow-list-wrapper .good-service-link.night:after,.rainbow-list-wrapper .body-cms-preview .good-service-link.night:after {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-arrow {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -672px
+}
+
+.body-cms-preview .down-arrow {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.white-down-arrow {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -672px
+}
+
+.body-cms-preview .white-down-arrow {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-triangle {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -704px
+}
+
+.body-cms-preview .down-triangle {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.plus-icon-blue,.rainbow-list .controls {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -704px
+}
+
+.body-cms-preview .plus-icon-blue,.body-cms-preview .rainbow-list .controls,.rainbow-list .body-cms-preview .controls {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-icon-blue {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -704px
+}
+
+.body-cms-preview .down-icon-blue {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.minus-icon-blue,.rainbow-list .rainbow-list-item.expanded .controls {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -736px
+}
+
+.body-cms-preview .minus-icon-blue,.body-cms-preview .rainbow-list .rainbow-list-item.expanded .controls,.rainbow-list .rainbow-list-item.expanded .body-cms-preview .controls {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.plus-icon-greenblue {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -736px
+}
+
+.body-cms-preview .plus-icon-greenblue {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.disruption-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -832px
+}
+
+.body-cms-preview .disruption-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.disruption-icon.severe {
+    background-position: -32px -832px
+}
+
+.up-stairs {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -864px
+}
+
+.body-cms-preview .up-stairs {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.toilets-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -864px
+}
+
+.body-cms-preview .toilets-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.toilets-disabled-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -864px
+}
+
+.body-cms-preview .toilets-disabled-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-stairs {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -896px
+}
+
+.body-cms-preview .down-stairs {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.pram-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -896px
+}
+
+.body-cms-preview .pram-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-lift,.icon-list .lifts-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -896px
+}
+
+.body-cms-preview .down-lift,.body-cms-preview .icon-list .lifts-icon,.icon-list .body-cms-preview .lifts-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.up-lift {
+    background-position: -64px -1024px
+}
+
+.up-escalator {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -928px
+}
+
+.body-cms-preview .up-escalator {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.walking-access-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -928px
+}
+
+.body-cms-preview .walking-access-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.wheelchair-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -928px
+}
+
+.body-cms-preview .wheelchair-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.down-escalator,.icon-list .escalators-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -960px
+}
+
+.body-cms-preview .down-escalator,.body-cms-preview .icon-list .escalators-icon,.icon-list .body-cms-preview .escalators-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.luggage-icon,.left-luggage-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -960px
+}
+
+.body-cms-preview .luggage-icon,.body-cms-preview .left-luggage-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.headphones-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -960px
+}
+
+.body-cms-preview .headphones-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.avoid-zone-1-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -992px
+}
+
+.body-cms-preview .avoid-zone-1-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.mode-icon {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 7px;
+    text-align: center
+}
+
+.disrupted .mode-icon:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1344px;
+    bottom: -10px;
+    right: -8px
+}
+
+.body-cms-preview .disrupted .mode-icon:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.night-tube-owl-blue {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -3104px
+}
+
+.body-cms-preview .night-tube-owl-blue {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tube-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1056px
+}
+
+.body-cms-preview .tube-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tflrail-icon,.tfl-rail-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -3072px
+}
+
+.body-cms-preview .tflrail-icon,.body-cms-preview .tfl-rail-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.overground-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1056px
+}
+
+.body-cms-preview .overground-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.overground-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: -40px -700px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.traffic-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -128px
+}
+
+.body-cms-preview .traffic-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.coach-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1120px
+}
+
+.body-cms-preview .coach-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.coach-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: 0px -700px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.poi-icon,.pointofinterest-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1120px
+}
+
+.body-cms-preview .poi-icon,.body-cms-preview .pointofinterest-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.poi-icon.small-icon,.pointofinterest-icon.small-icon {
+    background-size: 60px 2140px;
+    background-position: -40px -700px;
+    height: 20px;
+    width: 20px;
+    display: block
+}
+
+.street-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2144px
+}
+
+.body-cms-preview .street-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.plane-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2048px
+}
+
+.body-cms-preview .plane-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.mail-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1152px
+}
+
+.body-cms-preview .mail-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.dark .favourite-icon {
+    background-position: 0px -2048px
+}
+
+.favourite-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1184px
+}
+
+.body-cms-preview .favourite-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.favourite-icon.active {
+    background-position: 0px -1184px
+}
+
+.active .favourite-icon {
+    background-position: 0px -1184px
+}
+
+.email-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1184px
+}
+
+.body-cms-preview .email-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.phone-icon,.icon-list .payphones-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1216px
+}
+
+.body-cms-preview .phone-icon,.body-cms-preview .icon-list .payphones-icon,.icon-list .body-cms-preview .payphones-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.small-disrupted-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1344px
+}
+
+.body-cms-preview .small-disrupted-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.twenty-four-hour-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1344px
+}
+
+.body-cms-preview .twenty-four-hour-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tube-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1408px
+}
+
+.body-cms-preview .tube-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.national-rail-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1408px
+}
+
+.body-cms-preview .national-rail-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.overground-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1440px
+}
+
+.body-cms-preview .overground-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tflrail-station-icon,.tfl-rail-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -3072px
+}
+
+.body-cms-preview .tflrail-station-icon,.body-cms-preview .tfl-rail-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.dlr-station-icon,.docklands-station-icon,.docklands-light-railway-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1440px
+}
+
+.body-cms-preview .dlr-station-icon,.body-cms-preview .docklands-station-icon,.body-cms-preview .docklands-light-railway-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tram-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1440px
+}
+
+.body-cms-preview .tram-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.coach-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1472px
+}
+
+.body-cms-preview .coach-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.river-bus-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1472px
+}
+
+.body-cms-preview .river-bus-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.river-tour-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2208px
+}
+
+.body-cms-preview .river-tour-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bus-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1472px
+}
+
+.body-cms-preview .bus-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.cable-car-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1504px
+}
+
+.body-cms-preview .cable-car-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.taxi-rank-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1504px
+}
+
+.body-cms-preview .taxi-rank-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.minicab-office-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1504px
+}
+
+.body-cms-preview .minicab-office-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bus-stop-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1536px
+}
+
+.body-cms-preview .bus-stop-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.blank-bus-stop-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1536px
+}
+
+.body-cms-preview .blank-bus-stop-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bch-docking-station-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -3008px
+}
+
+.body-cms-preview .bch-docking-station-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bch-docking-station-icon.full-1000 {
+    background-position: -64px -1536px
+}
+
+.bch-docking-station-icon.full-000 {
+    background-position: -32px -1632px
+}
+
+.bch-docking-station-icon.full-125 {
+    background-position: 0px -1632px
+}
+
+.bch-docking-station-icon.full-250 {
+    background-position: -64px -1600px
+}
+
+.bch-docking-station-icon.full-375 {
+    background-position: -32px -1600px
+}
+
+.bch-docking-station-icon.full-500 {
+    background-position: 0px -1600px
+}
+
+.bch-docking-station-icon.full-625 {
+    background-position: -64px -1568px
+}
+
+.bch-docking-station-icon.full-750 {
+    background-position: -32px -1568px
+}
+
+.bch-docking-station-icon.full-875 {
+    background-position: 0px -1568px
+}
+
+.bch-docking-station-icon.empty-000 {
+    background-position: -64px -2816px
+}
+
+.bch-docking-station-icon.empty-125 {
+    background-position: -32px -2816px
+}
+
+.bch-docking-station-icon.empty-250 {
+    background-position: 0px -2816px
+}
+
+.bch-docking-station-icon.empty-375 {
+    background-position: -64px -2784px
+}
+
+.bch-docking-station-icon.empty-500 {
+    background-position: -32px -2784px
+}
+
+.bch-docking-station-icon.empty-625 {
+    background-position: 0px -2784px
+}
+
+.bch-docking-station-icon.empty-750 {
+    background-position: -64px -2752px
+}
+
+.bch-docking-station-icon.empty-875 {
+    background-position: -32px -2752px
+}
+
+.bch-docking-station-icon.empty-1000 {
+    background-position: 0px -2752px
+}
+
+.nearby-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1312px
+}
+
+.body-cms-preview .nearby-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.ticket-halls-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1696px
+}
+
+.body-cms-preview .ticket-halls-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.gates-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1728px
+}
+
+.body-cms-preview .gates-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.photo-booths-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1664px
+}
+
+.body-cms-preview .photo-booths-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.cash-machines-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1728px
+}
+
+.body-cms-preview .cash-machines-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.car-park-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1664px
+}
+
+.body-cms-preview .car-park-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.help-points-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1664px
+}
+
+.body-cms-preview .help-points-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bridge-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1696px
+}
+
+.body-cms-preview .bridge-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.waiting-room-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1696px
+}
+
+.body-cms-preview .waiting-room-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.wifi-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1728px
+}
+
+.body-cms-preview .wifi-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.boarding-ramps-icon {
+    background-position: -32px -2720px
+}
+
+.euro-cash-machines-icon {
+    background-position: -64px -2720px
+}
+
+.icon-info-interchange {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1760px
+}
+
+.body-cms-preview .icon-info-interchange {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon-info-full {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1760px
+}
+
+.body-cms-preview .icon-info-full {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon-info-none {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1760px
+}
+
+.body-cms-preview .icon-info-none {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.icon-info-partial {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1792px
+}
+
+.body-cms-preview .icon-info-partial {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.white-pram-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1792px
+}
+
+.body-cms-preview .white-pram-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.white-wheelchair-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1792px
+}
+
+.body-cms-preview .white-wheelchair-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.info-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1920px
+}
+
+.body-cms-preview .info-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.secondary-plan-journey-icon,.secondary-journey-from-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1984px
+}
+
+.body-cms-preview .secondary-plan-journey-icon,.body-cms-preview .secondary-journey-from-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.secondary-journey-to-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -1952px
+}
+
+.body-cms-preview .secondary-journey-to-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.select-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2016px
+}
+
+.body-cms-preview .select-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.nearby-icon-white {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2048px
+}
+
+.body-cms-preview .nearby-icon-white {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.menu-icon-alt {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2080px
+}
+
+.body-cms-preview .menu-icon-alt {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.menu-icon-blue {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2080px
+}
+
+.body-cms-preview .menu-icon-blue {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.menu-icon-white {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2080px
+}
+
+.body-cms-preview .menu-icon-white {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.tick-icon-alt,.map-options-panel .map-panel-radio:checked+.map-panel-radio-with-image:before {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2112px
+}
+
+.body-cms-preview .tick-icon-alt,.body-cms-preview .map-options-panel .map-panel-radio:checked+.map-panel-radio-with-image:before,.map-options-panel .body-cms-preview .map-panel-radio:checked+.map-panel-radio-with-image:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bicycle-moderate-icon,.cycle-moderate-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2176px
+}
+
+.body-cms-preview .bicycle-moderate-icon,.body-cms-preview .cycle-moderate-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.bicycle-fast-icon,.cycle-fast-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2176px
+}
+
+.body-cms-preview .bicycle-fast-icon,.body-cms-preview .cycle-fast-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.print-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2304px
+}
+
+.body-cms-preview .print-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.level-walkway {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -4px -256px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .level-walkway {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .level-walkway {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.selected .icon.bicycle-icon,.selected .icon.bicycle-easy-icon,.selected .icon.cycle-icon,.selected .icon.cycle-easy-icon,.selected.icon.bicycle-icon,.selected.icon.bicycle-easy-icon,.selected.icon.cycle-icon,.selected.icon.cycle-easy-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -288px
+}
+
+.body-cms-preview .selected .icon.bicycle-icon,.body-cms-preview .selected .icon.bicycle-easy-icon,.body-cms-preview .selected .icon.cycle-icon,.body-cms-preview .selected .icon.cycle-easy-icon,.body-cms-preview .selected.icon.bicycle-icon,.body-cms-preview .selected.icon.bicycle-easy-icon,.body-cms-preview .selected.icon.cycle-icon,.body-cms-preview .selected.icon.cycle-easy-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.selected .icon.walking-icon,.selected.icon.walking-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -4px -256px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .selected .icon.walking-icon,.body-cms-preview .selected.icon.walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .selected .icon.walking-icon,.body-cms-preview .selected.icon.walking-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.close-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: 0px -800px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .close-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .close-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.close-icon-white {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -32px -800px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .close-icon-white {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .close-icon-white {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.close3-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -64px -832px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .close3-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .close3-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.back-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -64px -3136px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .back-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .back-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.forward-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -32px -2336px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .forward-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .forward-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.share-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    background-position: -68px -224px;
+    height: 32px;
+    width: 24px;
+    display: block
+}
+
+.body-cms-preview .share-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.body-cms-preview .share-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.link-accordion-icon {
+    padding-left: 34px;
+    position: relative
+}
+
+.link-accordion-icon:after {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -672px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    margin-top: -16px
+}
+
+.body-cms-preview .link-accordion-icon:after {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.link-accordion-icon.link-accordion-expanded:after {
+    background-position: -32px -608px
+}
+
+.link-accordion-icon.link-accordion-icon-right {
+    padding-left: 0
+}
+
+.link-accordion-icon.link-accordion-icon-right:after {
+    right: -30px;
+    left: auto
+}
+
+.throbber-blue,#first-last-summary.loading:after {
+    width: 64px;
+    height: 64px;
+    background-image: url("/static/1/images/throbber-blue-large.gif");
+    background-size: 64px 64px;
+    background-position: 0 0
+}
+
+.throbber-blue-small,.selector span.downloading:after,.twitter-typeahead.downloading:not(.geocoded):after,.document-download-wrap.downloading .document-download-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("/static/1/images/throbber-blue-small.gif");
+    background-size: 32px 32px;
+    background-position: 0px 0px
+}
+
+[class*=roundel-icon] {
+    width: 60px;
+    height: 50px;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+.roundel-icon-bch {
+    width: 164px;
+    background-image: url("/static/1/images/roundels/CH.png")
+}
+
+.roundel-icon-bus,#ssp-roundel .mypage.mode-bus:after,.headline-container.mode-bus:after {
+    background-image: url("/static/1/images/roundels/Buses.png")
+}
+
+.roundel-icon-congestion {
+    width: 50px;
+    background-image: url("/static/1/images/roundels/CC.png")
+}
+
+.roundel-icon-coach,#ssp-roundel .mypage.mode-coach:after,.headline-container.mode-coach:after {
+    background-image: url("/static/1/images/roundels/Coaches.png")
+}
+
+.roundel-icon-cycle,#ssp-roundel .mypage.mode-cycle:after,.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_8.png")
+}
+
+.roundel-icon-cycle.full-000,#ssp-roundel .full-000.mypage.mode-cycle:after,.full-000.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_0.png")
+}
+
+.roundel-icon-cycle.full-125,#ssp-roundel .full-125.mypage.mode-cycle:after,.full-125.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_1.png")
+}
+
+.roundel-icon-cycle.full-250,#ssp-roundel .full-250.mypage.mode-cycle:after,.full-250.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_2.png")
+}
+
+.roundel-icon-cycle.full-375,#ssp-roundel .full-375.mypage.mode-cycle:after,.full-375.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_3.png")
+}
+
+.roundel-icon-cycle.full-500,#ssp-roundel .full-500.mypage.mode-cycle:after,.full-500.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_4.png")
+}
+
+.roundel-icon-cycle.full-625,#ssp-roundel .full-625.mypage.mode-cycle:after,.full-625.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_5.png")
+}
+
+.roundel-icon-cycle.full-750,#ssp-roundel .full-750.mypage.mode-cycle:after,.full-750.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_6.png")
+}
+
+.roundel-icon-cycle.full-875,#ssp-roundel .full-875.mypage.mode-cycle:after,.full-875.headline-container.mode-cycle:after {
+    background-image: url("/static/1/images/roundels/CH_7.png")
+}
+
+.roundel-icon-dial-a-ride {
+    background-image: url("/static/1/images/roundels/DialARide.png")
+}
+
+.roundel-icon-dlr,#ssp-roundel .mypage.mode-dlr:after,.headline-container.mode-dlr:after {
+    background-image: url("/static/1/images/roundels/DLR.png")
+}
+
+.roundel-icon-cable-car,#ssp-roundel .mypage.mode-cable-car:after,.headline-container.mode-cable-car:after {
+    width: 161px;
+    height: 68px;
+    background-image: url("/static/1/images/roundels/EAL.png")
+}
+
+.roundel-icon-lez {
+    height: 48px;
+    width: 48px;
+    background-image: url("/static/1/images/roundels/LEZ.png")
+}
+
+.roundel-icon-overground,#ssp-roundel .mypage.mode-overground:after,.headline-container.mode-overground:after {
+    background-image: url("/static/1/images/roundels/Overground.png")
+}
+
+.roundel-icon-river-bus,#ssp-roundel .mypage.mode-river-bus:after,.headline-container.mode-river-bus:after {
+    background-image: url("/static/1/images/roundels/River.png")
+}
+
+.roundel-icon-roads {
+    background-image: url("/static/1/images/roundels/Roads.png")
+}
+
+.roundel-icon-taxi {
+    background-image: url("/static/1/images/roundels/Taxi.png")
+}
+
+.roundel-icon-tfl {
+    background-image: url("/static/1/images/roundels/TfL.png")
+}
+
+.roundel-icon-tram,#ssp-roundel .mypage.mode-tram:after,.headline-container.mode-tram:after {
+    background-image: url("/static/1/images/roundels/Tram.png")
+}
+
+.roundel-icon-tube,#ssp-roundel .mypage.mode-tube:after,.headline-container.mode-tube:after {
+    background-image: url("/static/1/images/roundels/Tube.png")
+}
+
+.roundel-icon-tflrail,#ssp-roundel .mypage.mode-tflrail:after,#ssp-roundel .mypage.mode-tfl-rail:after,.headline-container.mode-tflrail:after,.headline-container.mode-tfl-rail:after,.roundel-icon-tfl-rail {
+    background-image: url("/static/1/images/roundels/TfL.png")
+}
+
+.no-letter:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1px;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -1px -418px;
+    height: 27px;
+    width: 29px
+}
+
+.body-cms-preview .no-letter:after {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.circle-icon {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;border-radius: 50%;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    height: 32px;
+    min-width: 30px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 4px;
+    overflow: hidden;
+    border-radius: 0;
+    margin-left: -1px
+}
+
+.circle-icon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 24px;
+    height: 24px;
+    left: 2px;
+    right: 2px;
+    z-index: -1;
+    top: 3px;
+    border-bottom: 2px solid #ccc
+}
+
+.circle-icon.red:after {
+    background-color: #C33
+}
+
+.circle-icon.no-letter {
+    width: 31px
+}
+
+.circle-icon.no-letter:after {
+    height: 27px
+}
+
+.disrupted .circle-icon:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -1344px;
+    top: 9px;
+    right: -10px
+}
+
+.body-cms-preview .disrupted .circle-icon:before {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.artGallery-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2848px
+}
+
+.body-cms-preview .artGallery-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.embassy-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2848px
+}
+
+.body-cms-preview .embassy-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.hospital-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2848px
+}
+
+.body-cms-preview .hospital-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.hotel-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2880px
+}
+
+.body-cms-preview .hotel-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.museum-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2880px
+}
+
+.body-cms-preview .museum-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.park-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2880px
+}
+
+.body-cms-preview .park-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.policeStation-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2912px
+}
+
+.body-cms-preview .policeStation-icon {
+    background-image: url("/static/1/images/vsprite.9d670463.png")
+}
+
+.school-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2912px
+}
+
+
+.stadium-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2912px
+}
+
+
+.university-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2944px
+}
+
+
+.zoo-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -64px -2944px
+}
+
+.landmark-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2976px
+}
+
+
+.generic-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px -2976px
+}
+
+
+.generic-icon-white {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -3296px
+}
+
+
+.shoppingCentre-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -2944px
+}
+
+
+
+.map-view-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-image: url("/static/1/images/vsprite.9d670463.png") \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: -32px 0px
+}
+
+.info-message:before{
+    content: "";
+    background-image: url(https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png);
+    background-image: url(/static/1/images/vsprite.9d670463.png) \9;
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -832px;
+    position: absolute;
+    left: 2.54%;
+    top: 50%;
+    margin-top: -16px;
+}
+
+.info-message {
+   position: relative;
+    margin: 0 0 10px;
+    border: 0;
+    display: block;
+    padding: 5px;
+}
+
+.info-message span{
+    display:block;
+    padding-left:50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+}
+
+
+
+
+

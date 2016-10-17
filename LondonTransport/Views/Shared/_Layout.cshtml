@@ -6,26 +6,17 @@
     <title>@ViewBag.Title - London Transport API</title>
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/icons.css" rel="stylesheet" />
+    <link href="~/Content/css/massautocomplete.theme.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("London Transport API. Usage examples.", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 app-name">
+                <h1>LONDON TRANSPORT API</h1>
+                <p>(usage examples)</p>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
