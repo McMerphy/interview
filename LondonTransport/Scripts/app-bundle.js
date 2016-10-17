@@ -55,6 +55,9 @@
         var temp = $scope.from;
         $scope.from = $scope.to;
         $scope.to = temp;
+        temp = $scope.fromMarker;
+        $scope.fromMarker = $scope.toMarker;
+        $scope.toMarker = temp;
     };
 
     $scope.getJourneys = function (from, to) {
