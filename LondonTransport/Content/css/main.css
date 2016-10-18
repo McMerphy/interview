@@ -47,6 +47,23 @@ body button {
   font-weight: bold;
   height: 35px;
 }
+body .ac-menu-item .col-xs-7 {
+  line-height: 32px;
+}
+body .ac-menu-item .icon {
+  padding: 0px;
+  margin: 0px;
+}
+body .types-list {
+  padding-left: 0px;
+  height: 32px;
+  display: block;
+}
+body .types-list li {
+  float: right;
+  margin: 5px 3px;
+  list-style-type: none;
+}
 body .journey-planner {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -59,6 +76,10 @@ body .journey-planner .autocomplete {
   position: relative;
   width: 100%;
 }
+body .journey-planner .autocomplete .alert {
+  padding: 4px;
+  margin-top: 5px;
+}
 body .journey-planner button {
   width: 80%;
 }
@@ -67,6 +88,32 @@ body .journey-planner button:hover {
 }
 body .journey-planner div:nth-of-type(2) {
   text-align: right;
+}
+body .journey {
+  background-color: #8ec85a;
+  color: #FEF7F1;
+}
+body .journey:hover {
+  background-color: #7ab149;
+  color: #FEF7F1;
+}
+body .journey .show-more {
+  margin-top: 10px;
+}
+body .journey .show-more,
+body .journey .show-stops {
+  text-align: right;
+}
+body .journey .show-more span span,
+body .journey .show-stops span span {
+  display: inline-block;
+  font-size: 0.9em;
+  top: 3px;
+}
+body .journey .show-more span:hover,
+body .journey .show-stops span:hover {
+  color: #31708F;
+  cursor: pointer;
 }
 body .map {
   margin-top: 40px;
@@ -81,12 +128,32 @@ body .map .col-xs-12 ng-map {
 body .map .custom-marker-icon {
   left: 10px;
 }
+body .map #custom-control {
+  margin-top: 8px;
+  margin-right: 8px;
+  background-color: #fefefe;
+  border: 1px solid #CBCBCB;
+  border-radius: 2px;
+  height: 30px;
+  -webkit-box-shadow: 0px 0px 1px 0px #CBCBCB;
+  -moz-box-shadow: 0px 0px 1px 0px #CBCBCB;
+  box-shadow: 0px 0px 1px 0px #CBCBCB;
+}
+body .map #custom-control .picked {
+  background-color: #CBCBCB;
+}
+body .map #custom-control .icon {
+  margin: 2px 0 3px 0;
+}
+body .map #custom-control .icon:first-child {
+  border-right: solid 1px #CBCBCB;
+}
 /* 
     Journeys 
 */
 .journeys {
   padding: 5px 25px;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 .possible-journeys .list-group {
   font-weight: bold;
@@ -99,22 +166,14 @@ body .map .custom-marker-icon {
 }
 .bound-time {
   font-weight: bold;
-  margin-top: 14px;
 }
 .bound-time span {
-  color: #2239c2;
-}
-.show-more {
-  color: #2239c2;
-  margin-top: 14px;
-  text-align: right;
-}
-.show-more span:hover {
-  cursor: pointer;
+  color: #3e3e3e;
 }
 .journey-time {
   vertical-align: central;
-  margin-top: 14px;
+  margin-top: 10px;
+  font-size: 1em;
 }
 ul.journey-steps {
   margin-left: 0;
@@ -140,6 +199,8 @@ ul.journey-steps li {
 .journey-description li {
   line-height: 30px;
   padding: 5px 10px;
+  background-color: #FEF7F1;
+  color: #31708F;
 }
 .journey-step {
   display: inline-block;
@@ -157,4 +218,7 @@ ul.journey-steps li {
   display: inline-block;
   font-weight: bold;
   width: 60px;
+}
+.icon {
+  position: relative;
 }

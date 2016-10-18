@@ -30,6 +30,11 @@
         placeMarker(e.latLng.lat(), e.latLng.lng());
     }
 
+    $scope.validateForm = function (form) {
+        form.fromName.$touched = true;
+        form.toName.$touched = true;
+    };
+
     function placeMarker(lat, lon, markerType) {
         markerType == 'departure' ? $scope.fromMarker = [lat, lon] : $scope.toMarker = [lat, lon];
     }
@@ -62,6 +67,9 @@
 
     $scope.getJourneys = function (from, to) {
         $scope.journeys = {};
+        if (from.name == undefined || to.name == undefined) {
+            return;
+        }
         var departure = (from.parameterValue == undefined ? from.name : from.parameterValue);
         var arrival = (to.parameterValue == undefined ? to.name : to.parameterValue);
         transportService.getJourneys(departure , arrival).then(function (response) {
@@ -88,24 +96,26 @@
             for (var i = 0; i < response.length; i++) {
                 for (var j = 0; j < response[i].matches.length; j++) {
                     if (response[i].matches[j].modes != undefined) {
+                        var match = response[i].matches[j];
+                        var label = ' <div class="row vertical-align"><div class="col-xs-7">' +
+                               '<strong>' + match.name + '</strong></div><div class="col-xs-5"><ul class="types-list">' ;
+
                         for (var k = 0; k < response[i].matches[j].modes.length; k++) {
-                            var match = response[i].matches[j];
-                            results.push({
-                                value: match.name, name: match.name, lat: match.lat, lon: match.lon,
-                                label: $sce.trustAsHtml(
-                                   ' <div class="icon ' + match.modes[k] + '-icon"></div>' +
-                                   '  <strong>' + match.name + '</strong>'
-                                 )
-                            });
+                            label += '<li class="icon ' + match.modes[k] + '-icon text-hide"></li>';
                         }
+                        results.push({
+                            value: match.name, name: match.name, lat: match.lat, lon: match.lon, parameterValue : match.icsId,
+                            label: $sce.trustAsHtml(label + '</ul></div></div>')
+                        });
                     }
                     else {
                         var match = response[i].matches[j];
                         results.push({
                             value: match.name, name: match.name, lat: match.lat, lon: match.lon,
                             label: $sce.trustAsHtml(
-                               '  <div><div class="icon ' + match.icon + '-icon"></div>' +
-                               '  <strong>' + match.name + '</strong></div>'
+                                 ' <div class="row vertical-align"><div class="col-xs-7">' +
+                               '<strong>' + match.name + '</strong></div><div class="col-xs-5"><ul class="types-list">' +
+                               '<li class="icon ' + match.icon + '-icon text-hide"></li>'
                              )
                         });
                     }
@@ -149,10 +159,16 @@
 
 
     $scope.pickDepartureAddress = function (journey) {
-        $scope.from = { name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName };
+        $scope.from = {
+            name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName,
+            lat: journey.place.lat, lon: journey.place.lon
+        };
     }
     $scope.pickArrivalAddress = function (journey) {
-        $scope.to = { name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName };;
+        $scope.to = {
+            name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName,
+            lat: journey.place.lat, lon: journey.place.lon
+        };;
     }
 
     $scope.changeCurrentJourney = function (journey) {

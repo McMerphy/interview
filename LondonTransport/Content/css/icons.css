@@ -2331,8 +2331,15 @@
     background-size: 96px 3424px;
     height: 32px;
     width: 32px;
-    background-position: 32px -1956px;
+    background-position: 64px -1956px;
+}
 
+.arrival-icon {
+    background-image: url("https://tfl.gov.uk/static/1/images/vsprite_x2.bf8ed3ae.png");
+    background-size: 96px 3424px;
+    height: 32px;
+    width: 32px;
+    background-position: 0px -1956px;
 }
 
 

@@ -1,12 +1,22 @@
 ﻿(function () {
     var londonApp = angular.module('londonApp', ['TransportService', 'ngMap', 'MassAutoComplete','ngSanitize']);
+    
+    londonApp.constant('Constants', {
+        PickingMode: {
+            1: 'None',
+            2: 'Deaprture',
+            3: 'Arrival'
+        }
+    });
 
-
-    londonApp.controller('JourneyController', function JourneyController($scope, $sce, $q, NgMap, transportService) {
+    londonApp.controller('JourneyController', function JourneyController($scope, $sce, $q, NgMap, transportService, Constants) {
+        $scope.constant = Constants;
+        $scope.pickingMode = Constants.PickingMode[1];
     $scope.fromSearchResults = [];
     $scope.toSearchResults = [];
     $scope.journeys = {};
     $scope.currentJourney = {};
+
     $scope.fromMarkerIcon =
     {
         url: 'Content/images/icons.png',
@@ -22,16 +32,36 @@
         anchor: [1, 32]
     }
         
+    $scope.activateAddressPicking = function (mode) {
+        $scope.pickingMode = mode;
+    }
+
+    $scope.clickOnMap = function (e) {
+        if ($scope.pickingMode == Constants.PickingMode[1]) {
+            return;
+        }
+        placeMarker(e.latLng.lat(), e.latLng.lng(), $scope.pickingMode);
+        pickingMode = Constants.PickingMode[1];
+    }
 
     $scope.init = function () {
     }
 
-    $scope.onClickOnMap = function (e) {
-        placeMarker(e.latLng.lat(), e.latLng.lng());
-    }
+
+    $scope.validateForm = function (form) {
+        form.fromName.$touched = true;
+        form.toName.$touched = true;
+    };
 
     function placeMarker(lat, lon, markerType) {
-        markerType == 'departure' ? $scope.fromMarker = [lat, lon] : $scope.toMarker = [lat, lon];
+        if (markerType == 'Departure') {
+            $scope.from.lat = lat;
+            $scope.from.lon = lon;
+        }
+        else {
+            $scope.to.lat = lat;
+            $scope.to.lon = lon;
+        }
     }
 
     function fitArrivalAndDestinationMarkers() {
@@ -62,6 +92,16 @@
 
     $scope.getJourneys = function (from, to) {
         $scope.journeys = {};
+        $scope.currentJourney = {};
+        if (from.name == undefined || to.name == undefined) {
+            return;
+        }
+        if (from.name != from.value) {
+            from.parameterValue = undefined;
+        }
+        if (to.name != to.value) {
+            to.parameterValue = undefined;
+        }
         var departure = (from.parameterValue == undefined ? from.name : from.parameterValue);
         var arrival = (to.parameterValue == undefined ? to.name : to.parameterValue);
         transportService.getJourneys(departure , arrival).then(function (response) {
@@ -88,24 +128,26 @@
             for (var i = 0; i < response.length; i++) {
                 for (var j = 0; j < response[i].matches.length; j++) {
                     if (response[i].matches[j].modes != undefined) {
+                        var match = response[i].matches[j];
+                        var label = ' <div class="row vertical-align"><div class="col-xs-7">' +
+                               '<strong>' + match.name + '</strong></div><div class="col-xs-5"><ul class="types-list">' ;
+
                         for (var k = 0; k < response[i].matches[j].modes.length; k++) {
-                            var match = response[i].matches[j];
-                            results.push({
-                                value: match.name, name: match.name, lat: match.lat, lon: match.lon,
-                                label: $sce.trustAsHtml(
-                                   ' <div class="icon ' + match.modes[k] + '-icon"></div>' +
-                                   '  <strong>' + match.name + '</strong>'
-                                 )
-                            });
+                            label += '<li class="icon ' + match.modes[k] + '-icon text-hide"></li>';
                         }
+                        results.push({
+                            value: match.name, name: match.name, lat: match.lat, lon: match.lon, parameterValue : match.icsId,
+                            label: $sce.trustAsHtml(label + '</ul></div></div>')
+                        });
                     }
                     else {
                         var match = response[i].matches[j];
                         results.push({
                             value: match.name, name: match.name, lat: match.lat, lon: match.lon,
                             label: $sce.trustAsHtml(
-                               '  <div><div class="icon ' + match.icon + '-icon"></div>' +
-                               '  <strong>' + match.name + '</strong></div>'
+                                 ' <div class="row vertical-align"><div class="col-xs-7">' +
+                               '<strong>' + match.name + '</strong></div><div class="col-xs-5"><ul class="types-list">' +
+                               '<li class="icon ' + match.icon + '-icon text-hide"></li>'
                              )
                         });
                     }
@@ -119,14 +161,14 @@
     function selectFromItem(selected) {
         $scope.from = selected;
         if (selected.lat != undefined) {
-            placeMarker(selected.lat, selected.lon, 'departure');
+            placeMarker(selected.lat, selected.lon, 'Departure');
             fitArrivalAndDestinationMarkers();
         }
     }
     function selectToItem(selected) {
         $scope.to = selected;
         if (selected.lat != undefined) {
-            placeMarker(selected.lat, selected.lon, 'arrival');
+            placeMarker(selected.lat, selected.lon, 'Arrival');
             fitArrivalAndDestinationMarkers();
         }
     }
@@ -149,10 +191,20 @@
 
 
     $scope.pickDepartureAddress = function (journey) {
-        $scope.from = { name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName };
+        $scope.from = {
+            name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName,
+            lat: journey.place.lat, lon: journey.place.lon
+        };
+        placeMarker(journey.place.lat, journey.place.lon, 'Departure');
+        fitArrivalAndDestinationMarkers();
     }
     $scope.pickArrivalAddress = function (journey) {
-        $scope.to = { name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName };;
+        $scope.to = {
+            name: journey.place.commonName, parameterValue: journey.parameterValue, label: journey.place.commonName,
+            lat: journey.place.lat, lon: journey.place.lon
+        };
+        placeMarker(journey.place.lat, journey.place.lon, 'Arrival');
+        fitArrivalAndDestinationMarkers();
     }
 
     $scope.changeCurrentJourney = function (journey) {

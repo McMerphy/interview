@@ -14,7 +14,6 @@ gulp.task('bootstrap-styles', function () {
         .pipe(gulp.dest('Content/css'))
 });
 
-
 gulp.task('angular-scripts', function () {
     return gulp.src([
             'wwwroot/lib/angular/angular.min.js',

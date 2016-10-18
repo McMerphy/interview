@@ -57,13 +57,10 @@
   outline: none;
   background-color: #e0eaff;
 }
-
-.ac-menu-item .icon {
-    position: absolute;
+.ac-menu-item {
+    vertical-align:central;
 }
-
 .ac-menu-item strong {
-    margin-left: 30px;
     display: inline-block;
     line-height: 15px;
 }

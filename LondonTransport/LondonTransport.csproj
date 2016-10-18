@@ -133,6 +133,7 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\icons.css" />
     <Content Include="Content\css\massautocomplete.theme.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\icons.png" />
     <Content Include="Scripts\app-bundle.js" />
     <Content Include="Scripts\lib\angular-bundle.min.js" />
@@ -561,6 +562,10 @@
     <Content Include="wwwroot\lib\ngmap\testapp\ui-router2.html" />
     <Content Include="wwwroot\lib\ngmap\testapp\user-editable-shapes.html" />
     <Content Include="wwwroot\lib\ngmap\testapp\USGSOverlay.js" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Content\less\main.less" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
