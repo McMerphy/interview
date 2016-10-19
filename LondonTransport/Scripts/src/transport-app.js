@@ -9,7 +9,7 @@
         }
     });
 
-    londonApp.controller('JourneyController', function JourneyController($scope, $sce, $q, NgMap, transportService, Constants) {
+    londonApp.controller('JourneyController', function JourneyController($scope, $sce, $q, $location, $anchorScroll, NgMap, transportService, Constants) {
         $scope.constant = Constants;
         $scope.pickingMode = Constants.PickingMode[1];
     $scope.fromSearchResults = [];
@@ -22,25 +22,44 @@
         url: 'Content/images/icons.png',
         size: [32, 32],
         origin: [32, 1956],
-        anchor: [1, 32]
+        anchor: [16, 32]
     }
     $scope.toMarkerIcon =
     {
         url: 'Content/images/icons.png',
         size: [32, 32],
         origin: [0, 1956],
-        anchor: [1, 32]
+        anchor: [16, 32]
     }
         
-    $scope.activateAddressPicking = function (mode) {
-        $scope.pickingMode = mode;
+    $scope.toggleAddressPicking = function (mode) {
+        $scope.pickingMode = (mode == $scope.pickingMode ? Constants.PickingMode[1] : mode);
+    };
+    $scope.toggleStops = function () {
+
     }
 
     $scope.clickOnMap = function (e) {
+        var setNameAndValueToPoint = function(type){
+            if (type == 'Departure') {
+                $scope.from.parameterValue = lat + ',' + lon;
+                $scope.from.name = lat + ',' + lon;
+                $scope.from.value = lat + ',' + lon;
+
+            }
+            else {
+                $scope.to.parameterValue = lat + ',' + lon;
+                $scope.to.name = lat + ',' + lon;
+                $scope.to.value = lat + ',' + lon;
+            }
+
+        }
+
         if ($scope.pickingMode == Constants.PickingMode[1]) {
             return;
         }
         placeMarker(e.latLng.lat(), e.latLng.lng(), $scope.pickingMode);
+        setNameAndValueToPoint($scope.pickingMode);
         pickingMode = Constants.PickingMode[1];
     }
 
@@ -52,6 +71,7 @@
         form.fromName.$touched = true;
         form.toName.$touched = true;
     };
+
 
     function placeMarker(lat, lon, markerType) {
         if (markerType == 'Departure') {
@@ -79,7 +99,6 @@
             map.fitBounds(bounds);
         });
     }
-
 
     $scope.reverseLocations = function () {
         var temp = $scope.from;
@@ -211,7 +230,12 @@
         if (!journey.hasStopCoordinates) {
             loadStopCoordinates(journey);
         }
+        $location.hash('map');
+
+        // call $anchorScroll()
+        $anchorScroll();
         $scope.currentJourney = journey;
+        fitArrivalAndDestinationMarkers();
     }
 
     $scope.checkTime = function (i) {

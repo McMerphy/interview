@@ -115,7 +115,11 @@ body {
         .show-more {
             margin-top: 10px;
         }
-
+        .show-on-map span{
+            &:hover {
+                cursor: pointer;
+            }
+        }
         .show-more, .show-stops{
             text-align:right;
             span {
@@ -133,7 +137,10 @@ body {
         }
 
         .stops-list {
-
+            li {
+                width: 90%;
+                border-left: solid 3px rgba(255, 0, 0, 0.81)
+            }
         }
     }
 
@@ -153,7 +160,7 @@ body {
         #custom-control {
             margin-top: 8px;
             margin-right:8px;
-            background-color: #fefefe;
+            background-color: rgba(254, 247, 241, 0.87);
             border: 1px solid #CBCBCB;
             border-radius: 2px;
             height: 30px;
@@ -162,13 +169,16 @@ body {
             -moz-box-shadow:  0px 0px 1px 0px #CBCBCB;
             box-shadow: 0px 0px 1px 0px #CBCBCB;
 
-            .picked {
-                background-color: #CBCBCB;
-            }
             .icon {
                 margin: 2px 0 3px 0;
-                &:first-child {
-                    border-right: solid 1px #CBCBCB;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:first-child.picked {
+                    background-position: 0px -1988px;
+                }
+                &:last-child.picked {
+                    background-position: 32px -1956px;
                 }
                 
             }

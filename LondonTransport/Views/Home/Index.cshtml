@@ -45,11 +45,16 @@
 
     <!-- List with disambiguations or List of journeys -->
     <div class="row" ng-show="journeys.hasOwnProperty('$type')">
-
+            
         <!-- Disambiguous results -->
         <div class="row possible-journeys" ng-show="journeys.hasOwnProperty('toLocationDisambiguation') || journeys.hasOwnProperty('fromLocationDisambiguation')">
             <div class="col-md-6">
-                <div class="info-message alert alert-warning" ng-show="journeys.fromLocationDisambiguation.matchStatus != 'identified'"><span>We found more than one location matching your departure</span></div>
+                <div class="info-message alert alert-warning" ng-show="journeys.fromLocationDisambiguation.matchStatus == 'list'">
+                    <span>We found more than one location matching your departure point</span>
+                </div>
+                <div class="info-message alert alert-warning" ng-show="journeys.fromLocationDisambiguation.matchStatus == 'notidentified'">
+                    <span>We can't find stops and places near your location</span>
+                </div>
                 <div class="list-group">
                     <a ng-click="pickDepartureAddress(j)" ng-class="from.name == j.place.commonName ? 'list-group-item active' : 'list-group-item'" ng-repeat="j in journeys.fromLocationDisambiguation.disambiguationOptions">
                         {{j.place.commonName}}
@@ -57,7 +62,12 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="info-message alert alert-warning" ng-show="journeys.toLocationDisambiguation.matchStatus != 'identified'"> <span>We found more than one location matching your arrival</span></div>
+                <div class="info-message alert alert-warning" ng-show="journeys.toLocationDisambiguation.matchStatus == 'list'">
+                    <span>We found more than one location matching your arrival point</span>
+                </div>
+                <div class="info-message alert alert-warning" ng-show="journeys.toLocationDisambiguation.matchStatus == 'notidentified'">
+                    <span>We can't find stops and places near your location</span>
+                </div>
                 <div class="list-group">
                     <a ng-click="pickArrivalAddress(j)" ng-class="to.name == j.place.commonName ? 'list-group-item active' : 'list-group-item'" ng-repeat="j in journeys.toLocationDisambiguation.disambiguationOptions">
                         {{j.place.commonName}}
@@ -70,13 +80,13 @@
         <!-- Journeys -->
         <div class="row journeys" ng-show="journeys.hasOwnProperty('journeys')">
             <div class="list-group">
-                <a class="list-group-item-info list-group-item journey" ng-repeat="j in journeys.journeys" ng-click="changeCurrentJourney(j)">
+                <a class="list-group-item-info list-group-item journey" ng-repeat="j in journeys.journeys" ">
                     <div class="row">
                         <div class="bound-time col-md-2">
                             Departs: <span>{{j.startDateTime.getHours() + ':' + checkTime(j.startDateTime.getMinutes())}}</span>&nbsp;&nbsp;&nbsp;
                             Arrives: <span>{{j.arrivalDateTime.getHours() + ':' + checkTime(j.arrivalDateTime.getMinutes())}}</span>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <ul class="journey-steps clearfix">
                                 <li ng-repeat="l in j.legs" ng-class="l.mode.name + '-icon' + ' text-hide'">
                                     {{l.instruction.summary}}
@@ -85,7 +95,8 @@
                             </ul>
                         </div>
                         <div class="col-md-2 journey-time"><span class="glyphicon glyphicon-time"></span>{{j.duration}} min</div>
-                        <div class="col-md-2 show-more"><span ng-click="j.isDetailsVisible = !j.isDetailsVisible">Show more <span class="glyphicon glyphicon-chevron-down"></span></span> </div>
+                        <div class="col-md-2 show-on-map" ng-click="changeCurrentJourney(j)"><span>Show on map</span></div>
+                        <div class="col-md-2 show-more"><span ng-click="j.isDetailsVisible = !j.isDetailsVisible">Show instruction <span class="glyphicon glyphicon-chevron-down"></span></span> </div>
                     </div>
                     <div class="row" ng-show="j.isDetailsVisible">
                         <div class="col-md-12">
@@ -99,10 +110,12 @@
                                             <div class="clearfix"></div>
                                         </div>
                                         <div class="col-xs-3">
-                                            <div class="show-stops" ng-show="l.path.stopPoints.length != 0"><span ng-click="showStops()">Show stops <span class="glyphicon glyphicon-chevron-down"></span></span> </div>
+                                            <div class="show-stops" ng-show="l.path.stopPoints.length != 0">
+                                                <span ng-click="$parent.selectedIndex = ($parent.selectedIndex == $index ? -1 : $index)">Show stops <span class="glyphicon glyphicon-chevron-down"></span></span> 
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" ng-show="$parent.selectedIndex == $index">
 
                                         <ul class="stops-list">
                                             <li ng-repeat="stop in l.path.stopPoints" class="list-group-item list-group-item-text">
@@ -126,7 +139,7 @@
         </div>
     </div>
 
-    <div class="row map">
+    <div class="row map" id="map">
         <div class="col-xs-12">
             <ng-map  center="51.50,-0.12" zoom="10" on-click="clickOnMap(event)">
                 <marker position="{{[to.lat, to.lon] }}" icon="{{toMarkerIcon}}"></marker>
@@ -139,11 +152,11 @@
                 </shape>
                 <custom-control id="custom-control" position="TOP_RIGHT" index="1">
                     <div>
-                        <div class="icon arrival-icon" ng-click="activateAddressPicking('Departure')" ng-class="picking-mode == 'Departure' ? 'picked' : ''"></div>
-                        <div class="icon departure-icon" ng-click="activateAddressPicking('Arrival')" ng-class="picking-mode == 'Arrival' ? 'picked' : ''"></div>
+                        <div class="icon departure-icon" ng-click="toggleAddressPicking('Departure')" ng-class="pickingMode == 'Departure' ? 'picked' : ''"></div>
+                        <div class="icon arrival-icon" ng-click="toggleAddressPicking('Arrival')" ng-class="pickingMode == 'Arrival' ? 'picked' : ''"></div>
                     </div>
                 </custom-control>
             </ng-map>
         </div>
     </div>
-</div>
+</div> 

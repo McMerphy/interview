@@ -100,6 +100,9 @@ body .journey:hover {
 body .journey .show-more {
   margin-top: 10px;
 }
+body .journey .show-on-map span:hover {
+  cursor: pointer;
+}
 body .journey .show-more,
 body .journey .show-stops {
   text-align: right;
@@ -114,6 +117,10 @@ body .journey .show-more span:hover,
 body .journey .show-stops span:hover {
   color: #31708F;
   cursor: pointer;
+}
+body .journey .stops-list li {
+  width: 90%;
+  border-left: solid 3px rgba(255, 0, 0, 0.81);
 }
 body .map {
   margin-top: 40px;
@@ -131,7 +138,7 @@ body .map .custom-marker-icon {
 body .map #custom-control {
   margin-top: 8px;
   margin-right: 8px;
-  background-color: #fefefe;
+  background-color: rgba(254, 247, 241, 0.87);
   border: 1px solid #CBCBCB;
   border-radius: 2px;
   height: 30px;
@@ -139,14 +146,17 @@ body .map #custom-control {
   -moz-box-shadow: 0px 0px 1px 0px #CBCBCB;
   box-shadow: 0px 0px 1px 0px #CBCBCB;
 }
-body .map #custom-control .picked {
-  background-color: #CBCBCB;
-}
 body .map #custom-control .icon {
   margin: 2px 0 3px 0;
 }
-body .map #custom-control .icon:first-child {
-  border-right: solid 1px #CBCBCB;
+body .map #custom-control .icon:hover {
+  cursor: pointer;
+}
+body .map #custom-control .icon:first-child.picked {
+  background-position: 0px -1988px;
+}
+body .map #custom-control .icon:last-child.picked {
+  background-position: 32px -1956px;
 }
 /* 
     Journeys 
