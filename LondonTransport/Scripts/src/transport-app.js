@@ -31,7 +31,8 @@
         $scope.journeys = {};
         $scope.currentJourney = {};
 
-        $scope.toggleAddressPicking = function (mode) {
+
+        $scope.clickCustomControl = function (mode) {
             $scope.pickingMode = (mode == $scope.pickingMode ? Constants.PickingMode.None : mode);
         };
 
@@ -40,15 +41,14 @@
                 return;
             }
             placeMarker(e.latLng.lat(), e.latLng.lng(), $scope.pickingMode);
-            setNameAndValueToPoint(e.latLng.lat(), e.latLng.lng(), $scope.pickingMode);
+            setCoordinatesAsNameValue(e.latLng.lat(), e.latLng.lng(), $scope.pickingMode);
             $scope.pickingMode = Constants.PickingMode.None;
         };
 
-        $scope.validateForm = function (form) {
-            form.fromName.$touched = true;
-            form.toName.$touched = true;
+        function zoomToLocation(lat, lon) {
+            $scope.map.setCenter({ lat: lat, lng: lon });
+            $scope.map.setZoom(15);
         };
-
 
         function placeMarker(lat, lon, markerType) {
             if (markerType == Constants.PickingMode.Departure) {
@@ -61,7 +61,7 @@
             }
         };
 
-        function fitArrivalAndDestinationMarkers() {
+        function fitPathToMapBounds() {
             var bounds = new google.maps.LatLngBounds();
             if ($scope.from.lat != undefined) {
                 var latlng = new google.maps.LatLng($scope.from.lat, $scope.from.lon);
@@ -77,6 +77,7 @@
             });
         };
 
+
         $scope.reverseLocations = function () {
             var temp = $scope.from;
             $scope.from = $scope.to;
@@ -86,35 +87,10 @@
             $scope.toMarker = temp;
         };
 
-        $scope.getJourneys = function (from, to) {
-            $scope.journeys = {};
-            $scope.currentJourney = {};
-            if (from.name == undefined || to.name == undefined) {
-                return;
-            }
-            if (from.name != from.value) {
-                from.parameterValue = undefined;
-            }
-            if (to.name != to.value) {
-                to.parameterValue = undefined;
-            }
-            var departure = (from.parameterValue == undefined ? from.name : from.parameterValue);
-            var arrival = (to.parameterValue == undefined ? to.name : to.parameterValue);
-            transportService.getJourneys(departure, arrival).then(function (response) {
-                if (response.hasOwnProperty('journeys')) {
-                    response.journeys.forEach(function (j) {
-                        var date = new Date(j.startDateTime);
-                        j.startDateTime = date;
-                        date = new Date(j.arrivalDateTime);
-                        j.arrivalDateTime = date;
-
-                        j.isDetailsVisible = false;
-                    });
-                }
-                $scope.journeys = response;
-            });
-        };
-
+        $scope.validateForm = function (form) {
+            form.fromName.$touched = true;
+            form.toName.$touched = true;
+        }
         $scope.from = {};
         $scope.to = {};
         function search(query) {
@@ -154,26 +130,6 @@
             return deffered.promise;
         };
 
-        function selectFromItem(selected) {
-            $scope.from = selected;
-            if (selected.lat != undefined) {
-                placeMarker(selected.lat, selected.lon, Constants.PickingMode.Departure);
-                fitArrivalAndDestinationMarkers();
-            }
-        };
-        function selectToItem(selected) {
-            $scope.to = selected;
-            if (selected.lat != undefined) {
-                placeMarker(selected.lat, selected.lon, Constants.PickingMode.Arrival);
-                fitArrivalAndDestinationMarkers();
-            }
-        };
-
-        function zoomToLocation(lat, lon) {
-            $scope.map.setCenter({ lat: lat, lng: lon });
-            $scope.map.setZoom(15);
-        }
-
         $scope.autocomplete_from_options = {
             suggest: search,
             on_error: console.log,
@@ -185,6 +141,50 @@
             on_select: selectToItem,
         };
 
+        function selectFromItem(selected) {
+            $scope.from = selected;
+            if (selected.lat != undefined) {
+                placeMarker(selected.lat, selected.lon, Constants.PickingMode.Departure);
+                fitPathToMapBounds();
+            }
+        };
+        function selectToItem(selected) {
+            $scope.to = selected;
+            if (selected.lat != undefined) {
+                placeMarker(selected.lat, selected.lon, Constants.PickingMode.Arrival);
+                fitPathToMapBounds();
+            }
+        };
+
+        $scope.getJourneys = function (from, to) {
+            $scope.journeys = {};
+            $scope.currentJourney = {};
+            if (from.name == undefined || to.name == undefined) {
+                return;
+            }
+            if (from.name != from.value) {
+                from.parameterValue = undefined;
+            }
+            if (to.name != to.value) {
+                to.parameterValue = undefined;
+            }
+            var departure = (from.parameterValue == undefined ? from.name : from.parameterValue);
+            var arrival = (to.parameterValue == undefined ? to.name : to.parameterValue);
+            transportService.getJourneys(departure, arrival).then(function (response) {
+                if (response.hasOwnProperty('journeys')) {
+                    response.journeys.forEach(function (j) {
+                        var date = new Date(j.startDateTime);
+                        j.startDateTime = date;
+                        date = new Date(j.arrivalDateTime);
+                        j.arrivalDateTime = date;
+
+                        j.isDetailsVisible = false;
+                    });
+                }
+                $scope.journeys = response;
+            });
+        };
+
 
         $scope.pickDepartureAddress = function (journey) {
             $scope.from = {
@@ -192,7 +192,7 @@
                 lat: journey.place.lat, lon: journey.place.lon
             };
             placeMarker(journey.place.lat, journey.place.lon, Constants.PickingMode.Departure);
-            fitArrivalAndDestinationMarkers();
+            fitPathToMapBounds();
         };
         $scope.pickArrivalAddress = function (journey) {
             $scope.to = {
@@ -200,49 +200,26 @@
                 lat: journey.place.lat, lon: journey.place.lon
             };
             placeMarker(journey.place.lat, journey.place.lon, Constants.PickingMode.Arrival);
-            fitArrivalAndDestinationMarkers();
+            fitPathToMapBounds();
         };
 
         $scope.changeCurrentJourney = function (journey) {
-            if (!journey.hasStopCoordinates) {
-                loadStopCoordinates(journey);
-            }
             $location.hash('map');
-
-            // call $anchorScroll()
+            
             $anchorScroll();
             $scope.currentJourney = journey;
-            fitArrivalAndDestinationMarkers();
+            $scope.currentJourney.legs.forEach(function (leg) {
+                leg.color = getLegColor(leg.mode.name);
+            });
+            fitPathToMapBounds();
         };
 
-        $scope.checkTime = function (i) {
+        $scope.formatMinutes = function (i) {
             return (i < 10) ? "0" + i : i;
         };
 
-        var loadStopCoordinates = function (journey) {
-            journey.legs.forEach(function (leg) {
-                var stopPoints = [];
-
-                leg.color = getLegColor(leg.mode.name)
-
-                leg.path.stopPoints.forEach(function (point) {
-                    stopPoints.push(point);
-                });
-
-                if (stopPoints.length > 0) {
-                    transportService.getStopsLocations(stopPoints).then(function (locations) {
-                        leg.path.stopPoints.forEach(function (point, i) {
-                            point.lat = locations[i].lat;
-                            point.lon = locations[i].lon;
-                        });
-                    });
-                }
-            });
-            journey.hasStopCoordinates = true;
-        };
-
-        function setNameAndValueToPoint(lat, lon, type) {
-            if (type == Constants.PickingMode.Departure) {
+        function setCoordinatesAsNameValue(lat, lon) {
+            if ($scope.pickingMode == Constants.PickingMode.Departure) {
                 $scope.from.parameterValue = lat + ',' + lon;
                 $scope.from.name = lat + ',' + lon;
                 $scope.from.value = lat + ',' + lon;

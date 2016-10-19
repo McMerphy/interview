@@ -83,8 +83,8 @@
                 <a class="list-group-item-info list-group-item journey" ng-repeat="j in journeys.journeys" ">
                     <div class="row">
                         <div class="bound-time col-md-2">
-                            Departs: <span>{{j.startDateTime.getHours() + ':' + checkTime(j.startDateTime.getMinutes())}}</span>&nbsp;&nbsp;&nbsp;
-                            Arrives: <span>{{j.arrivalDateTime.getHours() + ':' + checkTime(j.arrivalDateTime.getMinutes())}}</span>
+                            Departs: <span>{{j.startDateTime.getHours() + ':' + formatMinutes(j.startDateTime.getMinutes())}}</span>&nbsp;&nbsp;&nbsp;
+                            Arrives: <span>{{j.arrivalDateTime.getHours() + ':' + formatMinutes(j.arrivalDateTime.getMinutes())}}</span>
                         </div>
                         <div class="col-md-4">
                             <ul class="journey-steps clearfix">
@@ -152,8 +152,8 @@
                 </shape>
                 <custom-control id="custom-control" position="TOP_RIGHT" index="1">
                     <div>
-                        <div class="icon departure-icon" ng-click="toggleAddressPicking(constants.PickingMode.Departure)" ng-class="pickingMode == constants.PickingMode.Departure ? 'picked' : ''"></div>
-                        <div class="icon arrival-icon" ng-click="toggleAddressPicking(constants.PickingMode.Arrival)" ng-class="pickingMode == constants.PickingMode.Arrival ? 'picked' : ''"></div>
+                        <div class="icon departure-icon" ng-click="clickCustomControl(constants.PickingMode.Departure)" ng-class="pickingMode == constants.PickingMode.Departure ? 'picked' : ''"></div>
+                        <div class="icon arrival-icon" ng-click="clickCustomControl(constants.PickingMode.Arrival)" ng-class="pickingMode == constants.PickingMode.Arrival ? 'picked' : ''"></div>
                     </div>
                 </custom-control>
             </ng-map>
