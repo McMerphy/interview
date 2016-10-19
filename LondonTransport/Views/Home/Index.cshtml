@@ -94,8 +94,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-2 journey-time"><span class="glyphicon glyphicon-time"></span>{{j.duration}} min</div>
-                        <div class="col-md-2 show-on-map" ng-click="changeCurrentJourney(j)"><span>Show on map</span></div>
+                        <div class="col-md-2 journey-time"><span class="glyphicon glyphicon-time"></span> {{j.duration}} min</div>
+                        <div class="col-md-2 show-more" ng-click="changeCurrentJourney(j)"><span>Show on map</span></div>
                         <div class="col-md-2 show-more"><span ng-click="j.isDetailsVisible = !j.isDetailsVisible">Show instruction <span class="glyphicon glyphicon-chevron-down"></span></span> </div>
                     </div>
                     <div class="row" ng-show="j.isDetailsVisible">
@@ -142,8 +142,8 @@
     <div class="row map" id="map">
         <div class="col-xs-12">
             <ng-map  center="51.50,-0.12" zoom="10" on-click="clickOnMap(event)">
-                <marker position="{{[to.lat, to.lon] }}" icon="{{toMarkerIcon}}"></marker>
-                <marker position="{{[from.lat, from.lon]}}" icon="{{fromMarkerIcon}}"></marker>
+                <marker position="{{[to.lat, to.lon] }}" icon="{{constants.MARKER_STYLES.TO}}"></marker>
+                <marker position="{{[from.lat, from.lon]}}" icon="{{constants.MARKER_STYLES.FROM}}"></marker>
                 <shape ng-repeat="leg in currentJourney.legs" name="polyline" id="foo"
                        path="{{leg.path.lineString}}"
                        stroke-color="{{leg.color}}"
@@ -152,8 +152,8 @@
                 </shape>
                 <custom-control id="custom-control" position="TOP_RIGHT" index="1">
                     <div>
-                        <div class="icon departure-icon" ng-click="toggleAddressPicking('Departure')" ng-class="pickingMode == 'Departure' ? 'picked' : ''"></div>
-                        <div class="icon arrival-icon" ng-click="toggleAddressPicking('Arrival')" ng-class="pickingMode == 'Arrival' ? 'picked' : ''"></div>
+                        <div class="icon departure-icon" ng-click="toggleAddressPicking(constants.PickingMode.Departure)" ng-class="pickingMode == constants.PickingMode.Departure ? 'picked' : ''"></div>
+                        <div class="icon arrival-icon" ng-click="toggleAddressPicking(constants.PickingMode.Arrival)" ng-class="pickingMode == constants.PickingMode.Arrival ? 'picked' : ''"></div>
                     </div>
                 </custom-control>
             </ng-map>
